@@ -9,7 +9,7 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - xenial
+        - xenial64
 
   galaxy_tags: []
     - system
