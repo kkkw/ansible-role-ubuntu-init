@@ -1,7 +1,9 @@
 ---
 # tasks file for ansible-role-ubuntu-init
-- name: common | apt_get update
+- name: apt_get update
   apt: update_cache=yes
+  become: True
 
-- name: common | apt_get install python_software_properties
+- name: apt_get install python_software_properties
   apt: name=python-software-properties state=present
+  become: True
