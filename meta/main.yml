@@ -11,7 +11,7 @@ galaxy_info:
       versions:
         - xenial64
 
-  galaxy_tags: []
+  galaxy_tags:
     - system
     - packaging
 
