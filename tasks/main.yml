@@ -4,6 +4,10 @@
   apt: update_cache=yes
   become: True
 
-- name: apt_get install python_software_properties
-  apt: name=python-software-properties state=present
+- name: install default packages
+  apt: name={{ item }} state=present
+  with_items:
+    - python-software-properties
+    - zip
+    - unzip
   become: True
